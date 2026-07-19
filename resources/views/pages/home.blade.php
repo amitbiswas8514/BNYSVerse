@@ -1,9 +1,15 @@
 @extends('layouts.app')
 
+@section('title','Home')
+
 @section('content')
 
-<h1>Welcome to BNYSVerse 🚀</h1>
+<h1>India's Verified BNYS Community</h1>
 
-<p>India's Professional Network for BNYS.</p>
+<p>
+
+Learn • Connect • Heal • Grow
+
+</p>
 
 @endsection

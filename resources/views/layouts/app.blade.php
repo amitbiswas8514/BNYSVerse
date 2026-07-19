@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>BNYSVerse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>@yield('title','BNYSVerse')</title>
+
+    @vite(['resources/css/app.css','resources/js/app.js'])
 
 </head>
 
 <body>
 
-<header>
+    @include('components.navbar')
 
-<h2>BNYSVerse</h2>
+    <main>
 
-<hr>
+        @yield('content')
 
-</header>
+    </main>
 
-@yield('content')
-
-<hr>
-
-<footer>
-
-Copyright © BNYSVerse 2026
-
-</footer>
+    @include('components.footer')
 
 </body>
 
